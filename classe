@@ -1,0 +1,26 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("digite o primeiro numero ");
+            int n1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("digite o segundo numero ");
+            int n2=int.Parse(Console.ReadLine());
+            
+
+            int resultsoma = CalculadoraInt.soma(n1, n2);
+
+            CalculadoraInt nmaior = new CalculadoraInt(n1,n2);
+            nmaior.maiornumero();
+
+            
+            Console.WriteLine("Resultado da soma : {0} + {1} = {2}",n1, n2, resultsoma);
+            Console.WriteLine("e o maior numero entre eles é: {0}", nmaior.maiornumero());
+
+                Console.ReadKey();
+
+            
+
+        }
+    }
+}
